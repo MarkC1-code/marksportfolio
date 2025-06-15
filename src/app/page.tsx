@@ -442,7 +442,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
           >
             <motion.a
-              href="mailto:developer@example.com"
+              href="mailto:markchizoba5093@gmail.com"
               className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg font-semibold text-white relative overflow-hidden group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
