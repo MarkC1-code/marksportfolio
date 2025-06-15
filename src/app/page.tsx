@@ -184,7 +184,7 @@ export default function Portfolio() {
                       e.preventDefault(); // prevent the default anchor jump
                       const id = item.toLowerCase();
                       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-                      {item.toLowerCase()? setIsMenuOpen(false):null;}
+                      //setIsMenuOpen(false);
                     }}
                   >
                     {item}
