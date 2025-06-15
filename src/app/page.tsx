@@ -109,7 +109,7 @@ export default function Portfolio() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              {['About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
+              {[ 'Skills', 'Projects', 'Contact'].map((item, index) => (
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -172,7 +172,7 @@ export default function Portfolio() {
               transition={{ duration: 0.3 }}
             >
               <div className="px-4 py-6 space-y-4">
-                {['About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
+                {[ 'Skills', 'Projects', 'Contact'].map((item, index) => (
                   <motion.a
                     key={item}
                     href={`$id=${item.toLowerCase()}`}
@@ -184,7 +184,7 @@ export default function Portfolio() {
                       e.preventDefault(); // prevent the default anchor jump
                       const id = item.toLowerCase();
                       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-                      //setIsMenuOpen(false);
+                      {item.toLowerCase()? setIsMenuOpen(false):null;}
                     }}
                   >
                     {item}
