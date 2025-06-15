@@ -175,7 +175,7 @@ export default function Portfolio() {
                 {['About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
                   <motion.a
                     key={item}
-                    href={`#${item.toLowerCase()}`}
+                    href={`$id=${item.toLowerCase()}`}
                     className="block px-4 py-3 rounded-lg bg-gradient-to-r from-cyan-400/10 to-purple-400/10 border border-white/10 text-white hover:bg-white/10 transition-all"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -184,7 +184,7 @@ export default function Portfolio() {
                       e.preventDefault(); // prevent the default anchor jump
                       const id = item.toLowerCase();
                       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-                      setIsMenuOpen(false);
+                      //setIsMenuOpen(false);
                     }}
                   >
                     {item}
