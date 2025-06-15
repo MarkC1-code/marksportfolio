@@ -225,7 +225,7 @@ export default function Portfolio() {
             <div className="w-32 h-32 mx-auto mb-6 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-spin" style={{ animation: 'spin 20s linear infinite' }} />
               <div className="absolute inset-2 bg-slate-900 rounded-full flex items-center justify-center">
-                <span className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="text-4xl p-4 font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   MARK
                 </span>
               </div>
