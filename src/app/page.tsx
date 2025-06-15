@@ -180,7 +180,12 @@ export default function Portfolio() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault(); // prevent the default anchor jump
+                      const id = item.toLowerCase();
+                      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+                      setIsMenuOpen(false);
+                    }}
                   >
                     {item}
                   </motion.a>
